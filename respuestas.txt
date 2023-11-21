@@ -5,3 +5,4 @@ mkdir si
 mv si.txt si
 cat ../Alumnos.txt | awk '{print $1, $2"-"$5}'
 cat ../Alumnos.txt | awk '{print$1 $2}' | sort -u | grep -ci "Gonzalez"
+sed 's/Vicente/Pepe/g' ../Alumnos.txt
