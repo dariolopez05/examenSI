@@ -8,3 +8,4 @@ cat ../Alumnos.txt | awk '{print$1 $2}' | sort -u | grep -ci "Gonzalez"
 sed 's/Vicente/Pepe/g' ../Alumnos.txt
 cat ../Alumnos.txt | grep "201"
 cat ../Alumnos.txt | awk '{print $1, $2}' | sort -u | grep -i "^J"
+cat ../du.txt | sort -n | grep -v "K" | tail -n3
