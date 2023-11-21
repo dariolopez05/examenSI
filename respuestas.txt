@@ -2,3 +2,4 @@ mkdir examen
 cd examen/
 cat ../Alumnos.txt | grep -n "SI" | sed 's/:/ /g' | awk '{print $1}' > si.txt
 mkdir si
+mv si.txt si
